@@ -1,0 +1,49 @@
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: sans-serif;
+}
+
+h1 {
+  font-size: 3rem;
+  color: gold;
+}
+
+.circle {
+  margin: 30px auto;
+  width: 100px;
+  height: 100px;
+  background-color: lime;
+  border: 3px solid black;
+  border-radius: 50%;
+}
+
+h2 {
+  font-size: 2.4rem;
+  color: gold;
+}
+
+h3 {
+  font-size: 1.8rem;
+  color: gold;
+}
+
+section {
+  width: 100vh;
+  height: 25vh;
+  text-align: center;
+}
+
+.even {
+  background-color: dodgerblue;
+}
+
+.odd {
+  background-color: deepskyblue;
+}
+/*# sourceMappingURL=main.css.map */
