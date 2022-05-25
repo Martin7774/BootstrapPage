@@ -8,18 +8,39 @@
 	padding: 0;
 }
 
+html{
+	scroll-padding-top: 82px;
+}
+
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
 	background-color: #444;
 }
 
+.underline{
+	margin: 0 auto 40px;
+	width: 60px;
+	height: 4px;
+	background-color: $main-color;
+}
+
 .blue-text {
-	color: $blue-color;
+	color: $main-color;
+}
+
+h2{
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.shadow-bg{
+	background-color: rgba(0, 0, 0, 0.8);
 }
 
 nav {
 	text-transform: uppercase;
+	transition: background-color .6s;
 
 	a,
 	i {
@@ -27,7 +48,7 @@ nav {
 	}
 
 	a:hover {
-		color: $blue-color;
+		color: $main-color;
 	}
 
 	.fa-bars {
@@ -39,7 +60,7 @@ nav {
 	}
 
 	.active {
-		color: $blue-color;
+		color: $main-color;
 	}
 }
 
@@ -58,7 +79,7 @@ header {
 	.hero-ing {
 		position: relative;
 		height: 100vh;
-		background-image: url(/img/gaming-g6c5421b57_640.jpg);
+		background-image: url(/BootstrapPage/img/gaming-g6c5421b57_640.jpg);
 		background-position: center;
 		background-size: cover;
 		background-attachment: fixed;
@@ -98,10 +119,42 @@ header {
     }
 }
 
+.aboutus{
+	i{
+		margin-top: 20px;
+		font-size: 30px;
+	}
+
+	.aboutus-card-tittle{
+		font-size: 18px;
+		text-transform: uppercase;
+	}
+
+	.about-card-text{
+		font-size: 14px;
+	}
+
+	.aboutus-hover{
+		transition: color .3s;
+	}
+
+	.aboutus-hover:hover{
+		color: $main-color;
+	}
+
+}
+
+@media (min-width: 992px) {
+	html{
+		scroll-padding-top: 72px;
+	}
+}
+
+
 @media (min-width: 1200px) {
 	header {
 		.hero-ing {
-			background-image: url(/img/gaming-g50d88ca49_1920.jpg);
+			background-image: url(/BootstrapPage/img/gaming-g50d88ca49_1920.jpg);
 		}
 	}
 }
