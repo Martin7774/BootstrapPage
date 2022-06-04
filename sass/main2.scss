@@ -15,7 +15,7 @@ html {
 body {
 	position: relative;
 	font-family: 'Montserrat', sans-serif;
-	background-color: #444;
+	background-color: $bg-color;
 }
 
 .underline {
@@ -173,21 +173,142 @@ header {
 	}
 }
 
-.portfolio{
-	.carousel-item{
+.portfolio {
+	.carousel-item {
 		height: 600px;
+		// background-size: cover;
+		// background-attachment: fixed;
 	}
 
-	.carousel-caption{
+	.carousel-caption {
 		position: absolute;
 		left: 0;
 		right: 0;
 		padding: 40px 0;
-		background-color:rgba(0, 0, 0, 0.8);
+		background-color: rgba(0, 0, 0, 0.8);
 	}
 
-	.carousel-indicators{
+	.carousel-indicators {
 		padding-bottom: 20px;
+	}
+}
+
+.prices {
+	text-align: center;
+	.price-box {
+		margin: 20px 10px;
+		padding: 30px;
+		transform: perspective(180em) rotateX(18deg);
+		box-shadow: rgba(22, 31, 39, 0.42) 0px 60px 123px -25px,
+			rgba(19, 26, 32, 0.08) 0px 35px 75px -35px;
+		border-radius: 10px;
+		border: 1px solid;
+		border-color: rgb(213, 220, 226) rgb(213, 220, 226) rgb(184, 194, 204);
+		transition: transform .3s;
+	}
+
+	h3{
+		color: $main-color;
+		text-transform: uppercase;
+	}
+
+	span{
+		font-weight: bold;
+	}
+
+	i{
+		padding: 0 5px;
+		font-size: 24px;
+	}
+
+	button{
+		padding: 10px 20px;
+		text-transform: uppercase;
+	}
+
+	.price-tag{
+		font-size: 30px;
+		font-weight: bold;
+	}
+
+	.price-box:hover {
+		transform: translate3d(0px, 0px, -250px) scale(1.05);
+	  }
+
+	  .price-info{
+		  margin-top: 30px;
+
+		  a{
+			  text-decoration: none;
+		  }
+	  }
+}
+
+.team{
+		position: relative;
+		background-image: url('/BootstrapPage/img/office-g005aa7a40_640.jpg');
+		background-size: cover;
+		background-attachment: fixed;
+		z-index: 0;
+
+		h2{
+			color: $light-grey;
+		}
+
+		.team-shadow{
+			position: absolute;
+			top: 0;
+			width: 100%;
+			height: 100%;
+			background-color: rgba(0, 0, 0, 0.8);
+			z-index: -5;
+		}
+
+		.card{
+			transition: transform .3s;
+
+			ing{
+				height: 300px;
+				object-fit: cover;
+			}
+
+			i{
+				padding: 10px;
+			}
+		}
+		.card:hover {
+			transform: scale(.96);
+		}
+		.card-tittle{
+			margin-bottom: 20px;
+			text-align: center;
+			text-transform: uppercase;
+		}
+
+		// .card-body{
+		// 	height: 170px;
+		// }
+}
+
+.achievements{
+	i{
+		padding: 10px;
+		font-size: 48px;
+		color: $white;
+		text-shadow: 0 0 5px #000;
+	}
+
+	.achievements-list{
+		padding: 20px 0;
+	}
+
+	.achievement-number{
+		font-size: 22px;
+	}
+
+	.achievement-text{
+		font-size: 13px;
+		text-transform: uppercase;
 	}
 }
 
@@ -222,6 +343,12 @@ header {
 
 	.aboutus-hero {
 		background-image: url('/BootstrapPage/img/laptop-g3121e1201_1920.jpg');
+	}
+
+	.prices{
+		.price-info{
+			font-size: 18px;
+		}
 	}
 }
 
